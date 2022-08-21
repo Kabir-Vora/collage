@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+     <div class="container">
+    <center>
+      <h1>Download the selfie</h1>
+      <p><b>Description: </b>
+      <ul>
+        <li>Download the selfie on click of download button and not immediately after taking selfie</li>
+        <li>Remove the save() function call which was inside the setTimeout() function, and call save() function on click of "Download"</li>
+        <li>write code to download the image in sketch.js</li>
+      </ul></p>
+        <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</h4>
+        
+        <div class="form-group">
+        <h3>Say "take my selfie"</h3>
+        <label>Your voice output : </label>
+        <textarea class="form-control" id="textbox" readonly="true"></textarea><br>
+           <button class="btn btn-primary" onclick="start()">Start</button>
+        </div>
+
+       
+        <p>Press the Start button</p>
+
+        <label>Your webcam : </label>
+        <div id="camera"></div>
+        
+        <br>
+
+        <label>Your selife Will Display Here: </label>
+        <div id="result" ></div><br>
+        <button class="btn btn-primary" onclick="save()">Download</button>
+    </center>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
